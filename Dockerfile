@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:8.0-preview AS build
 WORKDIR /src
 COPY ["MonitoringExample/MonitoringExample.csproj", "MonitoringExample/"]
-RUN dotnet restore "MonitoringExample/MonitoringExample.csproj"
+RUN dotnet restore "./MonitoringExample/MonitoringExample.csproj"
 COPY . .
 WORKDIR "/src/MonitoringExample"
 RUN dotnet build "MonitoringExample.csproj" -c Release -o /app/build

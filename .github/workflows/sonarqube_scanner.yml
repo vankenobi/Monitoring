@@ -1,0 +1,21 @@
+name: SonarQube Scan
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  sonarqube-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarcloud-github-action@v1
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: http://localhost:9000  # SonarQube'nin adresini buraya girin

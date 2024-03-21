@@ -1,9 +1,8 @@
 ﻿/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Controllers/WeatherForecastController.cs
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/ApplicationDbContext.cs
-/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/DesignTimeDbContextFactory.cs
-/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/Migrations/20240318143423_InitialCreate.cs
-/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/Migrations/20240318143423_InitialCreate.Designer.cs
-/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/Migrations/ApplicationDbContextModelSnapshot.cs
+/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Migrations/20240321082356_InitialCreate.cs
+/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Migrations/20240321082356_InitialCreate.Designer.cs
+/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Migrations/ApplicationDbContextModelSnapshot.cs
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Program.cs
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/WeatherForecast.cs
@@ -12,5 +11,6 @@
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/obj/Debug/net8.0/MonitoringExample.AssemblyInfo.cs
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/obj/Debug/net8.0/MonitoringExample.MvcApplicationPartsAssemblyInfo.cs
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/appsettings.Development.json
+/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/appsettings.Docker.json
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/appsettings.json
 /Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Properties/launchSettings.json

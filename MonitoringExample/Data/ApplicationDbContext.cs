@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using MonitoringExample.Models;
 
 namespace MonitoringExample.Data
@@ -14,4 +13,3 @@ namespace MonitoringExample.Data
         public DbSet<User> Users { get; set; }
     }
 }
-

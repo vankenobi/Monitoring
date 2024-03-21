@@ -55,30 +55,43 @@ P/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/WeatherForecast.c
 set" %
 ;% &
 }' (
-} Š
+} ¯
 H/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Program.cs
-var 
-builder 
-= 
-WebApplication 
-. 
-CreateBuilder *
-(* +
-args+ /
-)/ 0
-;0 1
-builder 
-. 
-Configuration 
+var 
+builder 
+= 
+WebApplication 
+. 
+CreateBuilder *
+(* +
+args+ /
+)/ 0
+;0 1
+builder 
+. 
+Configuration 
+. 
+SetBasePath 
+( 
+	Directory 
+. 
+GetCurrentDirectory .
+(. /
+)/ 0
+)0 1
 .		 
-SetBasePath		 
-(		 
-	Directory		 
-.		 
-GetCurrentDirectory		 .
-(		. /
-)		/ 0
-)		0 1
+AddJsonFile		 
+(		 
+$str		 #
+,		# $
+optional		% -
+:		- .
+false		/ 4
+,		4 5
+reloadOnChange		6 D
+:		D E
+true		F J
+)		J K
 .
 
  
@@ -87,65 +100,72 @@ H/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Program.cs
  
 (
 
- 
+ 
+$"
+
+ 
 $str
 
- #
+ 
+{
+
+  
+builder
+
+  '
+.
+
+' (
+Environment
+
+( 3
+.
+
+3 4
+EnvironmentName
+
+4 C
+}
+
+C D
+$str
+
+D I
+"
+
+I J
 ,
 
-# $
+J K
 optional
 
-% -
+L T
 :
 
-- .
-false
-
-/ 4
-,
-
-4 5
-reloadOnChange
-
-6 D
-:
-
-D E
+T U
 true
 
-F J
+V Z
+,
+
+Z [
+reloadOnChange
+
+\ j
+:
+
+j k
+true
+
+l p
 )
 
-J K
-. 
-AddJsonFile 
-( 
-$" 
-$str 
-{  
-builder  '
-.' (
-Environment( 3
-.3 4
-EnvironmentName4 C
-}C D
-$strD I
-"I J
-,J K
-optionalL T
-:T U
-trueV Z
-,Z [
-reloadOnChange\ j
-:j k
-truel p
-)p q
-. #
-AddEnvironmentVariables 
-( 
-) 
-; 
+p q
+. #
+AddEnvironmentVariables 
+( 
+) 
+; 
 builder 
 . 
 Services 
@@ -194,22 +214,22 @@ H/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Program.cs
 )M N
 )N O
 ;O P
-builder 
-. 
-Services 
-. #
-AddEndpointsApiExplorer (
-(( )
-)) *
-;* +
 builder 
 . 
 Services 
-. 
-AddSwaggerGen 
-( 
-)  
-;  !
+. #
+AddEndpointsApiExplorer (
+(( )
+)) *
+;* +
+builder 
+. 
+Services 
+. 
+AddSwaggerGen 
+( 
+)  
+;  !
 var 
 app 
 = 	
@@ -244,44 +264,70 @@ UseSwagger 
 ( 
 ) 
 ; 
-}   
-app## 
-.## 
-UseHttpMetrics## 
-(## 
-)## 
-;## 
-app$$ 
-.$$ 
+}   
+if## 
+(## 
+app## 
+.## 
+Environment## 
+.## 
+IsEnvironment## !
+(##! "
+$str##" *
+)##* +
+)##+ ,
+{$$ 
+app%% 
+.%% 
 
-MapMetrics$$ 
-($$ 
-)$$ 
-;$$ 
-app&& 
-.&& 
-UseHttpsRedirection&& 
-(&& 
-)&& 
-;&& 
-app(( 
-.(( 
-UseAuthorization(( 
-((( 
-)(( 
-;(( 
+UseSwagger%% 
+(%% 
+)%% 
+;%% 
+app&& 
+.&& 
+UseSwaggerUI&& 
+(&& 
+)&& 
+;&& 
+}'' 
 app** 
 .** 
-MapControllers** 
+UseHttpMetrics** 
 (** 
 )** 
 ;** 
-app,, 
-.,, 
-Run,, 
-(,, 
-),, 	
-;,,	 
+app++ 
+.++ 
+
+MapMetrics++ 
+(++ 
+)++ 
+;++ 
+app-- 
+.-- 
+UseHttpsRedirection-- 
+(-- 
+)-- 
+;-- 
+app// 
+.// 
+UseAuthorization// 
+(// 
+)// 
+;// 
+app11 
+.11 
+MapControllers11 
+(11 
+)11 
+;11 
+app33 
+.33 
+Run33 
+(33 
+)33 	
+;33	 
 õ
 L/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs
 	namespace 	
@@ -333,16 +379,14 @@ L/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs
 }
 
  
-} ü
-m/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/Migrations/20240318143423_InitialCreate.cs
+} Ö
+h/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Migrations/20240321082356_InitialCreate.cs
 	namespace 	
 MonitoringExample
  
-. 
-Data  
-.  !
+. 
 
-Migrations! +
+Migrations &
 { 
 public		 
 
@@ -493,164 +537,49 @@ PrimaryKey $
 ;!! 
 }"" 	
 }## 
-}$$ ñ
-`/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/DesignTimeDbContextFactory.cs
-	namespace 	
-MonitoringExample
- 
-. 
-Data  
-{ 
-public 
-class &
-DesignTimeDbContextFactory (
-:) *'
-IDesignTimeDbContextFactory+ F
-<F G 
-ApplicationDbContextG [
->[ \
-{		 
-private
-
- 
-IConfiguration
-
- 
-_configuration
-
- -
-;
-
-- .
-public &
-DesignTimeDbContextFactory	 #
-(# $
-IConfiguration$ 2
-configuration3 @
-)@ A
-{ 
-_configuration 
-= 
-configuration *
-;* +
-} 
-public  
-ApplicationDbContext #
-CreateDbContext$ 3
-(3 4
-string4 :
-[: ;
-]; <
-args= A
-)A B
-{ 	#
-DbContextOptionsBuilder #
-<# $ 
-ApplicationDbContext$ 8
->8 9#
-dbContextOptionsBuilder: Q
-=R S
-newT W
-(W X
-)X Y
-;Y Z#
-dbContextOptionsBuilder #
-.# $
-	UseNpgsql$ -
-(- .
-_configuration. <
-.< =
-GetConnectionString= P
-(P Q
-$strQ ]
-)] ^
-)^ _
-;_ `
-return 
-new  
-ApplicationDbContext +
-(+ ,#
-dbContextOptionsBuilder, C
-.C D
-OptionsD K
-)K L
-;L M
-} 	
-} 
-} å
+}$$ ™
 Z/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/ApplicationDbContext.cs
-	namespace 	
-MonitoringExample
+	namespace 	
+MonitoringExample
  
-. 
-Data  
-{ 
-public 
-class  
-ApplicationDbContext "
-:# $
-	DbContext% .
-{ 
-public
+. 
+Data  
+{ 
+public 
+class  
+ApplicationDbContext "
+:# $
+	DbContext% .
+{ 
+public		  
+ApplicationDbContext		 #
+(		# $
+DbContextOptions		$ 4
+options		5 <
+)		< =
+:		> ?
+base		@ D
+(		D E
+options		E L
+)		L M
+{
 
-  
-ApplicationDbContext
-
- #
-(
-
-# $
-DbContextOptions
-
-$ 4
-options
-
-5 <
-)
-
-< =
-:
-
-> ?
-base
-
-@ D
-(
-
-D E
-options
-
-E L
-)
-
-L M
-{ 	
-} 	
-public 
-DbSet 
-< 
-User 
-> 
-Users  
-{! "
-get# &
-;& '
-set( +
-;+ ,
-}- .
-	protected 
-override 
-void 
-OnModelCreating  /
-(/ 0
-ModelBuilder0 <
-modelBuilder= I
-)I J
-{ 	
-}	 
-
-} 
-} ®
+ 	
+} 	
+public 
+DbSet 
+< 
+User 
+> 
+Users  
+{! "
+get# &
+;& '
+set( +
+;+ ,
+}- .
+} 
+} ®
 f/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Controllers/WeatherForecastController.cs
 	namespace 	
 MonitoringExample
@@ -767,8 +696,8 @@ _dbContext 
 , 
 Surname 
 = 
-$str 
-, 
+$str 
+,  
 Gender   
 =   
 true   

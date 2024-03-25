@@ -31,9 +31,11 @@
     <None Remove="Data\" />
     <None Remove="Models\" />
     <None Remove="Dockerfile" />
+    <None Remove="Monitoring\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Monitoring\" />
   </ItemGroup>
 </Project>

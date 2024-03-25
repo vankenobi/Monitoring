@@ -11,8 +11,6 @@ builder.Configuration
     .AddEnvironmentVariables();
 
 
-Console.WriteLine(builder.Configuration.GetValue<string>("Ortam"));
-
 var connectionString = builder.Configuration.GetConnectionString("postgresql");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseNpgsql(connectionString!));
@@ -20,7 +18,6 @@ options.UseNpgsql(connectionString!));
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
-
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

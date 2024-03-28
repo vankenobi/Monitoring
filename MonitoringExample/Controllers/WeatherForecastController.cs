@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MonitoringExample.Data;
 using MonitoringExample.Models;
@@ -25,7 +26,7 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
-        var stopWatch = System.Diagnostics.Stopwatch.StartNew();
+        var stopWatch = Stopwatch.StartNew();
 
         User user = new()
         {
@@ -35,13 +36,16 @@ public class WeatherForecastController : ControllerBase
             Gender = true
         };
 
+        Thread.Sleep(500);
+
         _dbContext.Add(user);
         _dbContext.SaveChanges();
+        _dbContext.Dispose();
 
         Console.WriteLine("GetWeatherForecast took a request.");
 
         stopWatch.Stop();
-        double elapsedTime = stopWatch.Elapsed.TotalSeconds;
+        double elapsedTime = stopWatch.Elapsed.TotalMilliseconds;
 
         CustomMetrics.ObserveRequestDuration("Get", "GetWeatherForecast", elapsedTime);
 

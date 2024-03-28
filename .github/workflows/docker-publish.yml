@@ -22,9 +22,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/setup-buildx-action@v3.2.0
       with:
-        context: .
-        file: ./Dockerfile
-        platforms: linux/arm64,linux/amd64
+        platforms: linux/amd64,linux/arm64
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/monitoring:latest
 

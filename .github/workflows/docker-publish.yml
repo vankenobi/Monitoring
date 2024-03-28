@@ -23,7 +23,7 @@ jobs:
       uses: docker/setup-buildx-action@v3.2.0
 
     - name: Build Docker image
-      run: docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_USERNAME }}/monitoring:latest .
+      run: docker buildx build --platform linux/arm64 -t ${{ secrets.DOCKER_USERNAME }}/monitoring:latest .
 
     - name: Push Docker image
       run: docker buildx push ${{ secrets.DOCKER_USERNAME }}/monitoring:latest

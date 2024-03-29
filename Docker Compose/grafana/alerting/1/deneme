@@ -1,0 +1,3 @@
+{{ define "deneme" }}
+  Merhaba bir aler geldi.
+{{ end }}

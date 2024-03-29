@@ -1,5 +1,5 @@
-˜
-P/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/WeatherForecast.cs
+‘
+I/Users/musakucuk/Projects/Monitoring/MonitoringExample/WeatherForecast.cs
 
  
 
@@ -8,26 +8,56 @@ P/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/WeatherForecast.c
 
 		 
 
- ¼
-H/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Program.csb
+ É
+A/Users/musakucuk/Projects/Monitoring/MonitoringExample/Program.csb
   
 
-  '  . 5    
+  '    . 5  
  
-4 ; v
-    ## %% && ** ++ -- // 11 33 Š
-L/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs
+  "
+4 ; v
+     !! %% '' (( ,, -- // 11 33 55 ƒ
+E/Users/musakucuk/Projects/Monitoring/MonitoringExample/Models/User.cs
 
  
 
  
 
- 
+ 
 
- 
+ 
 
-		 š
-h/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Migrations/20240321082356_InitialCreate.cs
+		 ¼
+R/Users/musakucuk/Projects/Monitoring/MonitoringExample/Monitoring/CustomMetrics.cs
+
+ 
+* :3 C,, <
+& 70 A    %% && 
+
+  /
+
+ ,
+
+ 7
+
+## 7
+
+** 1
+**9 ?,,$ *
+**H P,,, 4
+**Y j,,> O±
+S/Users/musakucuk/Projects/Monitoring/MonitoringExample/Data/ApplicationDbContext.cs
+
+		 "
+5 <E L
+
+  
+
+  -
+F T -
+
+ $“
+a/Users/musakucuk/Projects/Monitoring/MonitoringExample/Migrations/20240321082356_InitialCreate.cs
 
 		 &
 
@@ -38,20 +68,16 @@ h/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Migrations/202403
 1 26 7
 
   $
-6 F   Š
-Z/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/ApplicationDbContext.cs
+6 F   Å
+_/Users/musakucuk/Projects/Monitoring/MonitoringExample/Controllers/WeatherForecastController.cs
 
- "
-		5 <		E L
+ &2
+* 4 )) ** ++ 
+: C 
+% .88 883 <
 
-  Œ
-f/Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Controllers/WeatherForecastController.cs
-
-		 &(
-* 4 ## $$ 
-: C 
-% .,, ,,3 <
-
-( +
- ## 
-((- 2**> C
+( +
+ // 00 &
+ )) 
+00 22J U
+44- 266> C

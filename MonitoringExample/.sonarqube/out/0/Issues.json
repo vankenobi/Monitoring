@@ -12,99 +12,60 @@
       },
       "results": [
         {
-          "ruleId": "CS8618",
+          "ruleId": "S2068",
           "level": "warning",
-          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 17,
-                  "endLine": 7,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 17,
-                  "endLine": 7,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Surname' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Models/User.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/musakucuk/Projects/Monitoring/MonitoringExample/appsettings.Docker.json",
                 "region": {
                   "startLine": 9,
+                  "startColumn": 20,
+                  "endLine": 9,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/musakucuk/Projects/Monitoring/MonitoringExample/appsettings.json",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 20,
+                  "endLine": 9,
+                  "endColumn": 100
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Hide this public constructor by making it 'protected'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/musakucuk/Projects/Monitoring/MonitoringExample/Monitoring/CustomMetrics.cs",
+                "region": {
+                  "startLine": 7,
                   "startColumn": 16,
-                  "endLine": 9,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Data/ApplicationDbContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 28,
-                  "endLine": 13,
-                  "endColumn": 33
+                  "endLine": 7,
+                  "endColumn": 29
                 }
               }
             }
@@ -114,60 +75,18 @@
           }
         },
         {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Possible null reference argument for parameter 'connectionString' in 'DbContextOptionsBuilder NpgsqlDbContextOptionsBuilderExtensions.UseNpgsql(DbContextOptionsBuilder optionsBuilder, string connectionString, Action<NpgsqlDbContextOptionsBuilder>? npgsqlOptionsAction = null)'.",
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Change ApplicationDbContext.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/Program.cs",
+                "uri": "file:///Users/musakucuk/Projects/Monitoring/MonitoringExample/Data/ApplicationDbContext.cs",
                 "region": {
-                  "startLine": 18,
-                  "startColumn": 23,
-                  "endLine": 18,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2068",
-          "level": "warning",
-          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/appsettings.Docker.json",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 20,
-                  "endLine": 9,
-                  "endColumn": 111
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2068",
-          "level": "warning",
-          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/musakucuk/Projects/MonitoringExample/MonitoringExample/appsettings.json",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 20,
-                  "endLine": 10,
-                  "endColumn": 111
+                  "startLine": 25,
+                  "startColumn": 30,
+                  "endLine": 25,
+                  "endColumn": 37
                 }
               }
             }
@@ -178,31 +97,36 @@
         }
       ],
       "rules": {
-        "CS8604": {
-          "id": "CS8604",
-          "shortDescription": "Possible null reference argument.",
-          "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8604)",
+        "CA1816": {
+          "id": "CA1816",
+          "shortDescription": "Dispose methods should call SuppressFinalize",
+          "fullDescription": "A method that is an implementation of Dispose does not call GC.SuppressFinalize; or a method that is not an implementation of Dispose calls GC.SuppressFinalize; or a method calls GC.SuppressFinalize and passes something other than this (Me in Visual Basic).",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1816",
           "properties": {
-            "category": "Compiler",
+            "category": "Usage",
             "isEnabledByDefault": true,
             "tags": [
-              "Compiler",
-              "Telemetry"
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
             ]
           }
         },
-        "CS8618": {
-          "id": "CS8618",
-          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Whenever there are portions of code that are duplicated and do not depend on the state of their container class, they can be centralized inside a \"utility class\". A utility class is a class that only has static members, hence it should not be instantiated.",
           "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
           "properties": {
-            "category": "Compiler",
+            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
-              "Compiler",
-              "Telemetry"
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
             ]
           }
         },
